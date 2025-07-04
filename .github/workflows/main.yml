@@ -2,7 +2,7 @@ name: Count Words in Markdown
 
 on:
   push:
-    branches:
+    branches: 
       - main
 
 jobs:
@@ -15,3 +15,11 @@ jobs:
 
       - name: Count words in markdown files
         uses: ./
+
+      - name: Send Discord Notification
+        if: success()
+        run: |
+          curl -H "Content-Type: application/json" \
+               -X POST \
+               -d "{\"content\": \"✅ GitHub Action completed successfully for **$GITHUB_REPOSITORY** on branch **$GITHUB_REF_NAME**.\"}" \
+               ${{ secrets.DISCORD_WEBHOOK_URL }}
