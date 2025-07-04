@@ -15,7 +15,15 @@ jobs:
         run: |
           curl -H "Content-Type: application/json" \
                -X POST \
-               -d "{\"content\": \"✅ GitHub Action started successfully for **$GITHUB_REPOSITORY** on branch **$GITHUB_REF_NAME**.\"}" \
+               -d '{
+                     "embeds": [
+                       {
+                         "title": "✅ GitHub Action Started",
+                         "description": "Repository: **${{ github.repository }}**\nBranch: **${{ github.ref_name }}**\nStatus: ✅ Success",
+                         "color": 3066993
+                       }
+                     ]
+                   }' \
                ${{ secrets.DISCORD_WEBHOOK_URL }}
       - name: Checkout code
         uses: actions/checkout@v3
