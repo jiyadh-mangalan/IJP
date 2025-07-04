@@ -10,6 +10,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Send Discord Notification
+        if: success()
+        run: |
+          curl -H "Content-Type: application/json" \
+               -X POST \
+               -d "{\"content\": \"✅ GitHub Action started successfully for **$GITHUB_REPOSITORY** on branch **$GITHUB_REF_NAME**.\"}" \
+               ${{ secrets.DISCORD_WEBHOOK_URL }}
       - name: Checkout code
         uses: actions/checkout@v3
 
