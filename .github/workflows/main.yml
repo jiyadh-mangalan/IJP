@@ -1,0 +1,17 @@
+name: Count Words in Markdown
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  count-markdown-words:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Count words in markdown files
+        uses: ./
