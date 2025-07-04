@@ -1,4 +1,4 @@
-import os
+import o
 
 def count_words_in_file(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
