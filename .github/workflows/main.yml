@@ -28,5 +28,13 @@ jobs:
         run: |
           curl -H "Content-Type: application/json" \
                -X POST \
-               -d "{\"content\": \"✅ GitHub Action completed successfully for **$GITHUB_REPOSITORY** on branch **$GITHUB_REF_NAME**.\"}" \
+               -d '{
+                     "embeds": [
+                       {
+                         "title": "✅ GitHub Action Completed",
+                         "description": "Repository: **${{ github.repository }}**\nBranch: **${{ github.ref_name }}**\nStatus: ✅ Success",
+                         "color": 3066993
+                       }
+                     ]
+                   }' \
                ${{ secrets.DISCORD_WEBHOOK_URL }}
