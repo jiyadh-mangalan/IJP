@@ -1,0 +1,5 @@
+name: "Markdown Word Counter"
+description: "Counts total words in all markdown (.md) files in the repo"
+runs:
+  using: "docker"
+  image: "Dockerfile"
