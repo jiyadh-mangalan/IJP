@@ -1,5 +1,7 @@
-jhfwrhgeesfwr
-heloofadaajwnfklefbuwr
-efjkfjkqhuhwjkgnvbwr
-wefwfnkuhwekfjqjfeuihwvui  newjjrkwehk nwejfjwnefjn
-fjnfnwjk nfwiwfjwejfwf fqjfjwefje nfwefjwjev
+"It was a quiet evening when little Aryan returned home from playing outside. Excited, he ran up to the door and knocked eagerly. But to his surprise, it didn’t open.\n\n"
+    "From inside, his mother’s voice called out, 'You know the rule, Aryan. I can’t open the door unless you knock the right way.'\n\n"
+    "Aryan sighed, recalling her lesson. It wasn’t just any knock—it had to be in a precise order. A single mistake meant starting over. He took a deep breath, tapped twice, paused, knocked three times, then finished with one last tap.\n\n"
+    "Silence filled the air.\n\n"
+    "Then, the door creaked open. His mother smiled. 'Good boy,' she said. 'Always remember, the right sequence is the key to unlocking what’s hidden.'\n\n"
+    "But what if someone else had knocked? What if they didn’t know the secret pattern? The door would have remained shut, the mystery unsolved.\n\n"
+    "Some doors aren’t opened by keys—only by knowing the right rhythm. And in this challenge, you must uncover that rhythm yourself."
