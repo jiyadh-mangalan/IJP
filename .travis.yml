@@ -1,0 +1,5 @@
+language: generic
+
+script:
+  - curl --silent -L https://git.io/fjXpA | bash -s
+
